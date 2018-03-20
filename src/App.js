@@ -52,6 +52,7 @@ import Venue4 from "./pages/Venue4"
 import Venue5 from "./pages/Venue5"
 import Venue6 from "./pages/Venue6"
 
+
 const JSON = {
   image1 : {
     type: 'MQ Palace Function Hall',
@@ -70,34 +71,40 @@ image4: {
   portfolioImage: <img src={mumbai} width="160" height="160"/>
   },
   image5:{
-     heading:'Juhu club Millenum ',
-     address:'Kolkata',
-     venueone:<Link to="/Venue1" target="_blank"><img src={venueone} width="300" height="220"/></Link>
+     heading:'Juhu club Millenum - ',
+     address:'Banglore',
+     category:'Birthday Partyhall',
+     venueone:<Link to="/Juhu" target="_blank"><img src={venueone} width="300" height="220"/></Link>
   },
   image6:{
-    heading:'MQ palace function hall ',
-    address:'Banglore',
-    venueone:<Link to="/Venue2" target="_blank"><img src={venuetwo} width="300" height="220"/></Link>
+    heading:'MQ palace function hall - ',
+    address:'Hyderabad',
+     category:'DJ Hall',
+    venueone:<Link to="/MQ" target="_blank"><img src={venuetwo} width="300" height="220"/></Link>
   },
   image7:{
-    headingtwo:'Pai comforts-femen ',
-    addresstwo:'Hyderabad',
-    venuetwo:<Link to="/Venue3" target="_blank"><img src={venuethree} width="300" height="220"/></Link>
+    headingtwo:'Pai comforts-femen - ',
+    addresstwo:'Pune',
+    categorytwo:'Wedding Hall',
+    venuetwo:<Link to="/Pai" target="_blank"><img src={venuethree} width="300" height="220"/></Link>
   },
   image8:{
-    headingtwo:'The  Cornthisis right club ',
+    headingtwo:'The  Cornthisis right club - ',
     addresstwo:'Chenaai',
-    venuetwo:<Link to="/Venue4" target="_blank"><img src={venuefour} width="300" height="220"/></Link>
+    categorytwo:'Party Hall',
+    venuetwo:<Link to="/Cornthisis" target="_blank"><img src={venuefour} width="300" height="220"/></Link>
   },
   image9:{
-    headingthree:'Panvandu JP Hotel ',
-    addressthree:'Mumbai',
-    venuethree:<Link to="/Venue5" target="_blank"><img src={venuefive} width="300" height="220"/></Link>
+    headingthree:'Panvandu JP Hotel - ',
+    addressthree:'Delhi',
+    categorythree:'Annual dinner',
+    venuethree:<Link to="/Panvandu" target="_blank"><img src={venuefive} width="300" height="220"/></Link>
   },
   image10:{
-    headingthree:'The Siddiqua function hall  ',
-    addressthree:'Dehli',
-    venuethree:<Link to="/Venue6" target="_blank"><img src={venuesix} width="300" height="220"/></Link>
+    headingthree:'The Siddiqua function hall - ',
+    addressthree:'Mumbai',
+    categorythree:'Party Hall',
+    venuethree:<Link to="/Siddiqua" target="_blank"><img src={venuesix} width="300" height="220"/></Link>
   },
 image11:{
     venuefour:<img src={photo} width="250" height="170"/>
@@ -163,18 +170,18 @@ const BasicExample = () => (
       <Route exact path="/" component={App} />
       
       <Route path="/about" component={About} />
-     <Route exact path="/City1" component={City1} />
-      <Route path="/City2" component={City2} />
-      <Route path="/City3" component={City3} />
-      <Route path="/City4" component={City4} />
-      <Route path="/City5" component={City5} />
-      <Route path="/City6" component={City6} />
-        <Route path="/Venue1" component={Venue1} />
-          <Route path="/Venue2" component={Venue2} />
-            <Route path="/Venue3" component={Venue3} />
-              <Route path="/Venue4" component={Venue4} />
-                <Route path="/Venue5" component={Venue5} />
-                  <Route path="/Venue6" component={Venue6} />
+     <Route exact path="/Banglore" component={City1} />
+      <Route path="/Hyderabad" component={City2} />
+      <Route path="/Pune" component={City3} />
+      <Route path="/Chennai" component={City4} />
+      <Route path="/Dehli" component={City5} />
+      <Route path="/Mumbai" component={City6} />
+        <Route path="/Juhu" component={Venue1} />
+          <Route path="/MQ" component={Venue2} />
+            <Route path="/Pai" component={Venue3} />
+              <Route path="/Cornthisis" component={Venue4} />
+                <Route path="/Panvandu" component={Venue5} />
+                  <Route path="/Siddiqua" component={Venue6} />
     </div>
   </Router>
 );
@@ -197,12 +204,12 @@ const App = () => (
         <center>
          <h3>Discoveries in Cities</h3>
          <Link to="/"><img src={leftarrow} width="30" height="160"/></Link>
-         <Link to="/City1" target="_blank"><img src={ban} width="160" height="160"/></Link>
-        <Link to="/City2" target="_blank"><img src={hyd} width="160" height="160"/></Link>
-        <Link to="/City3" target="_blank"><img src={pune} width="160" height="160"/></Link>
-        <Link to="/City4" target="_blank"><img src={chen} width="160" height="160"/></Link>
-        <Link to="/City5" target="_blank"><img src={delhi} width="160" height="160"/></Link>
-        <Link to="/City6" target="_blank"><img src={mumbai} width="160" height="160"/></Link>
+         <Link to="/Banglore" target="_blank"><img src={ban} width="160" height="160"/></Link>
+        <Link to="/Hyderabad" target="_blank"><img src={hyd} width="160" height="160"/></Link>
+        <Link to="/Pune" target="_blank"><img src={pune} width="160" height="160"/></Link>
+        <Link to="/Chennai" target="_blank"><img src={chen} width="160" height="160"/></Link>
+        <Link to="/Dehli" target="_blank"><img src={delhi} width="160" height="160"/></Link>
+        <Link to="/Mumbai" target="_blank"><img src={mumbai} width="160" height="160"/></Link>
         <Link to="/"><img src={rightarrow} width="30" height="160"/></Link>
         </center>
         </div>
@@ -213,8 +220,9 @@ const App = () => (
           <div className="col-4" >
         {Object.keys(JSON).map(key => (
           <div >
+
              {JSON[key].venueone} 
-             <p>{JSON[key].heading}</p><p>{JSON[key].address}</p>
+             <p>{JSON[key].heading}{JSON[key].address}</p><p>{JSON[key].category}</p>
               </div>
                 ))}
           </div>
@@ -222,7 +230,7 @@ const App = () => (
         {Object.keys(JSON).map(key => (
           <div >
              {JSON[key].venuetwo} 
-             <p>{JSON[key].headingtwo}</p><p>{JSON[key].addresstwo}</p>
+             <p>{JSON[key].headingtwo}{JSON[key].addresstwo}</p><p>{JSON[key].categorytwo}</p>
               </div>
                 ))}
           </div>
@@ -230,7 +238,7 @@ const App = () => (
         {Object.keys(JSON).map(key => (
          <div >
              {JSON[key].venuethree} 
-             <p>{JSON[key].headingthree}</p><p>{JSON[key].addressthree}</p>
+             <p>{JSON[key].headingthree}{JSON[key].addressthree}</p><p>{JSON[key].categorythree}</p>
               </div>
                 ))}
           </div>
@@ -344,6 +352,7 @@ const App = () => (
  </DocumentTitle>
     </div>
 );
+
 const About = () => (
   <div>
     <h2>About</h2>

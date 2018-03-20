@@ -1,9 +1,25 @@
 import React, { Component } from "react";
-
+import App from "../App"
+import venuetwo from "../images/venuetwo.png"
+import { BrowserRouter as Router, Route, Link } from "react-router-dom";
+const JSON={
+  image6:{
+    heading:'MQ palace function hall ',
+    venueone:<img src={venuetwo} width="300" height="220"/>
+  },
+};
 const City2 = () => (
   <div>
-    <h5>This is Hyderabad.</h5>
-  </div>
-);
+    
+    <h5>Welcome to Hyderabad</h5>
+    <h6>Venues in Hyderabad</h6>
+        {Object.keys(JSON).map(key => (
+          <div >
+             {JSON[key].venueone} 
+             <p>{JSON[key].heading}</p>
+              </div>
+                ))}
+          </div>
 
+);
 export default City2;
