@@ -72,32 +72,32 @@ image4: {
   image5:{
      heading:'Juhu club Millenum ',
      address:'Kolkata',
-     venueone:<Link to="/Venue1" ><img src={venueone} width="300" height="220"/></Link>
+     venueone:<Link to="/Venue1" target="_blank"><img src={venueone} width="300" height="220"/></Link>
   },
   image6:{
     heading:'MQ palace function hall ',
     address:'Banglore',
-    venueone:<Link to="/Venue2" ><img src={venuetwo} width="300" height="220"/></Link>
+    venueone:<Link to="/Venue2" target="_blank"><img src={venuetwo} width="300" height="220"/></Link>
   },
   image7:{
     headingtwo:'Pai comforts-femen ',
     addresstwo:'Hyderabad',
-    venuetwo:<Link to="/Venue3" ><img src={venuethree} width="300" height="220"/></Link>
+    venuetwo:<Link to="/Venue3" target="_blank"><img src={venuethree} width="300" height="220"/></Link>
   },
   image8:{
     headingtwo:'The  Cornthisis right club ',
     addresstwo:'Chenaai',
-    venuetwo:<Link to="/Venue4" ><img src={venuefour} width="300" height="220"/></Link>
+    venuetwo:<Link to="/Venue4" target="_blank"><img src={venuefour} width="300" height="220"/></Link>
   },
   image9:{
     headingthree:'Panvandu JP Hotel ',
     addressthree:'Mumbai',
-    venuethree:<Link to="/Venue5" ><img src={venuefive} width="300" height="220"/></Link>
+    venuethree:<Link to="/Venue5" target="_blank"><img src={venuefive} width="300" height="220"/></Link>
   },
   image10:{
     headingthree:'The Siddiqua function hall  ',
     addressthree:'Dehli',
-    venuethree:<Link to="/Venue6" ><img src={venuesix} width="300" height="220"/></Link>
+    venuethree:<Link to="/Venue6" target="_blank"><img src={venuesix} width="300" height="220"/></Link>
   },
 image11:{
     venuefour:<img src={photo} width="250" height="170"/>
@@ -197,13 +197,12 @@ const App = () => (
         <center>
          <h3>Discoveries in Cities</h3>
          <Link to="/"><img src={leftarrow} width="30" height="160"/></Link>
-         <Link to="/City1"><img src={ban} width="160" height="160"/></Link>
-        <Link to="/City2" ><img src={hyd} width="160" height="160"/></Link>
-        <Link to="/City3" ><img src={pune} width="160" height="160"/></Link>
-        <Link to="/City4"><img src={chen} width="160" height="160"/></Link>
-        <Link to="/City5" ><img src={delhi} width="160" height="160"/></Link>
-        <Link to="/City6"
-        ><img src={mumbai} width="160" height="160"/></Link>
+         <Link to="/City1" target="_blank"><img src={ban} width="160" height="160"/></Link>
+        <Link to="/City2" target="_blank"><img src={hyd} width="160" height="160"/></Link>
+        <Link to="/City3" target="_blank"><img src={pune} width="160" height="160"/></Link>
+        <Link to="/City4" target="_blank"><img src={chen} width="160" height="160"/></Link>
+        <Link to="/City5" target="_blank"><img src={delhi} width="160" height="160"/></Link>
+        <Link to="/City6" target="_blank"><img src={mumbai} width="160" height="160"/></Link>
         <Link to="/"><img src={rightarrow} width="30" height="160"/></Link>
         </center>
         </div>
