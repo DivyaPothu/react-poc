@@ -28,9 +28,10 @@
 
 .venueclass{
   background-color: black;
-  height: 800px;
+  height: 700px;
   padding: 80px;
-  color: red;
+  color: white;
+  font-size: 13px;
 
 }
 .App-title {
@@ -45,7 +46,7 @@
 }
 .popularspace{
     background-color: white;
-      height: 70px;
+      height: 6px;
 }
 
 .App-intro {
@@ -58,10 +59,34 @@
   }
 .hallclass{
   background-color: white;
-  height: 650px;
+  height: 600px;
   padding: 80px;
   }
 @keyframes App-logo-spin {
   from { transform: rotate(0deg); }
   to { transform: rotate(360deg); }
+}
+p.outset {border-style: outset;}
+.menumargin{
+position: absolute; 
+  top: 40px; 
+  left: 80; 
+  width: 100%;
+}
+h2 span { 
+   color: white;
+   letter-spacing: -1px;  
+   background: rgb(0, 0, 0); /* fallback color */
+   background: rgba(0, 0, 0, 0.4);
+   padding: 10px; 
+   margin-left: 900px;
+   margin-top: 200px;
+   font-size: 17px;
+}
+h2 span a{
+  margin-right:20px;
+}
+.contacts
+{
+  width:80%;
 }

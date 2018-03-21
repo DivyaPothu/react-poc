@@ -15,7 +15,7 @@ const JSON={
 const Partyvenue = () => (
   <div>
          <header className="App-header"><img src={logo} height="100%"/></header>
-    <h5>Party Halls</h5>
+    <h5>Conference Rooms</h5>
         {Object.keys(JSON).map(key => (
           <div >
              {JSON[key].venueone} 

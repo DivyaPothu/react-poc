@@ -37,6 +37,7 @@ import wedhall from "./images/weddinghall.png"
 import annualhall from "./images/annualdinners.png"
 import partyhall from "./images/partyhall.png"
 import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
+import conferencerooms from "./images/conferencerooms.png"
 //import Theme from "./less/theme.less"
 import "./App.css";
 import City1 from "./pages/City1"
@@ -85,37 +86,37 @@ image4: {
   image5:{
      heading:'Juhu club Millenum - ',
      address:'Banglore',
-     category:'Birthday Partyhall',
+     category:'Category-Birthday Partyhall',
      venueone:<Link to="/Juhu" target="_blank"><img src={venueone} width="300" height="220"/></Link>
   },
   image6:{
     heading:'MQ palace function hall - ',
     address:'Hyderabad',
-     category:'DJ Hall',
+     category:'Category-DJ Hall',
     venueone:<Link to="/MQ" target="_blank"><img src={venuetwo} width="300" height="220"/></Link>
   },
   image7:{
     headingtwo:'Pai comforts-femen - ',
     addresstwo:'Pune',
-    categorytwo:'Wedding Hall',
+    categorytwo:'Category-Wedding Hall',
     venuetwo:<Link to="/Pai" target="_blank"><img src={venuethree} width="300" height="220"/></Link>
   },
   image8:{
     headingtwo:'The  Cornthisis right club - ',
     addresstwo:'Chenaai',
-    categorytwo:'Party Hall',
+    categorytwo:'Category-Party Hall',
     venuetwo:<Link to="/Cornthisis" target="_blank"><img src={venuefour} width="300" height="220"/></Link>
   },
   image9:{
     headingthree:'Panvandu JP Hotel - ',
     addressthree:'Delhi',
-    categorythree:'Annual dinner',
+    categorythree:'Category-Annual dinner',
     venuethree:<Link to="/Panvandu" target="_blank"><img src={venuefive} width="300" height="220"/></Link>
   },
   image10:{
     headingthree:'The Siddiqua function hall - ',
     addressthree:'Mumbai',
-    categorythree:'Party Hall',
+    categorythree:'Category-Party Hall',
     venuethree:<Link to="/Siddiqua" target="_blank"><img src={venuesix} width="300" height="220"/></Link>
   },
 image11:{
@@ -143,7 +144,7 @@ image12:{
     venueeleven:<Link to="/Anchor" target="_blank"><img src={anchor} width="250" height="170"/></Link>
   },
    image19:{
-    venuetwelve:<img src={contacts} width="1400" height="170"/>
+    venuetwelve:<img src={contacts} width="1295" height="170"/>
   },
   image20:{
    
@@ -172,7 +173,7 @@ image12:{
    },
    image25:{
      
-     hallsthree:<Link to="/Partyy" target="_blank"><img src={phall} width="300" height="220"/></Link>,
+     hallsthree:<Link to="/Partyy" target="_blank"><img src={conferencerooms} width="300" height="220"/></Link>,
      details3:''
    },
 };
@@ -214,13 +215,11 @@ const BasicExample = () => (
 const App = () => (
      <div >
       <Menu></Menu>
-      <header className="App-header" ><img src={logo} height="100%"/>
-      <div align="right" >
-     <a href="">Venue</a>
-        <a href="">Add Venue</a>
-        <a href="">Login</a>
-      </div>
-      </header>
+      <header className="App-header" ><img src={logo} height="130%" width="15%"/>
+      <div class="menumargin" >
+   <h2><span><a href="">Venue</a><a href="">Vendor</a> <a href="">Add Venue</a> <a href="">Login</a></span></h2>
+      </div></header>
+    
       <DocumentTitle title="React Ultimate :: About">
         
         <TextHolder>
@@ -228,7 +227,8 @@ const App = () => (
          <img src={venue} width="100%" height="380"/>
          <div className="cities">
         <center>
-         <h3>Discovery In Cities</h3>
+         <h3>Discover In Cities</h3>
+         <center><p class="outset"></p></center>
          <Link to="/"><img src={leftarrow} width="30" height="160"/></Link>
          <Link to="/Banglore" target="_blank"><img src={ban} width="160" height="160"/></Link>
         <Link to="/Hyderabad" target="_blank"><img src={hyd} width="160" height="160"/></Link>
@@ -239,8 +239,9 @@ const App = () => (
         <Link to="/"><img src={rightarrow} width="30" height="160"/></Link>
         </center>
         </div>
+         <center><h3>Venues</h3></center>
+                 <center><p class="outset"></p></center>
         <div className="venueclass">
-        <center><h3 className="venuecolor">VENUES</h3></center>
         <div className="row">
           
           <div className="col-4" >
@@ -298,13 +299,13 @@ const App = () => (
        </div>
      </div>
      </div>
-          
+          <center><h3>Popular Services</h3></center>
+             <center><p class="outset"></p></center>
           <div className="popularspace">
         <div className="row">
         </div>
         </div>
 <div className="popularclass">
-        <center><h3 className="venuecolor">Popular Services</h3></center>
         <div className="row">
 <div className="col-3">
         {Object.keys(JSON).map(key => (
