@@ -51,8 +51,20 @@ import Venue3 from "./pages/Venue3"
 import Venue4 from "./pages/Venue4"
 import Venue5 from "./pages/Venue5"
 import Venue6 from "./pages/Venue6"
-
-
+import bdayvenue from "./pages/bdayvenue"
+import Djvenue from "./pages/Djvenue"
+import Wedvenue from "./pages/Wedvenue"
+import Partyvenue from "./pages/Partyvenue"
+import Annualvenue from "./pages/Annualvenue"
+import Party1venue from "./pages/Party1venue"
+import photography from "./pages/photography"
+import Bridal from "./pages/Bridal"
+import Mehandi from "./pages/Mehandi"
+import Dj from "./pages/Dj"
+import Catering from "./pages/Catering"
+import Decoration from "./pages/Decoration"
+import Serving from "./pages/Serving"
+import Anchor from "./pages/Anchor"
 const JSON = {
   image1 : {
     type: 'MQ Palace Function Hall',
@@ -107,60 +119,60 @@ image4: {
     venuethree:<Link to="/Siddiqua" target="_blank"><img src={venuesix} width="300" height="220"/></Link>
   },
 image11:{
-    venuefour:<img src={photo} width="250" height="170"/>
+    venuefour:<Link to="/photography" target="_blank"><img src={photo} width="250" height="170"/></Link>
   },
 image12:{
-    venuefive:<img src={bridal} width="250" height="170"/>
+    venuefive:<Link to="/Bridal" target="_blank"><img src={bridal} width="250" height="170"/></Link>
   },
   image13:{
-    venuesix:<img src={mehandi} width="250" height="170"/>
+    venuesix:<Link to="/Mehandi" target="_blank"><img src={mehandi} width="250" height="170"/></Link>
   },
   image14:{
-    venueseven:<img src={dj} width="250" height="170"/>
+    venueseven:<Link to="/Djj" target="_blank"><img src={dj} width="250" height="170"/></Link>
   },
   image15:{
-    venueeight:<img src={catering} width="250" height="170"/>
+    venueeight:<Link to="/Catering" target="_blank"><img src={catering} width="250" height="170"/></Link>
   },
   image16:{
-    venuenine:<img src={deco} width="250" height="170"/>
+    venuenine:<Link to="/Decoration" target="_blank"><img src={deco} width="250" height="170"/></Link>
   },
   image17:{
-    venueten:<img src={serve} width="250" height="170"/>
+    venueten:<Link to="/Serving" target="_blank"><img src={serve} width="250" height="170"/></Link>
   },
   image18:{
-    venueeleven:<img src={anchor} width="250" height="170"/>
+    venueeleven:<Link to="/Anchor" target="_blank"><img src={anchor} width="250" height="170"/></Link>
   },
    image19:{
     venuetwelve:<img src={contacts} width="1400" height="170"/>
   },
   image20:{
    
-    hallsone:<img src={bdayhall} width="300" height="220"/>,
+    hallsone:<Link to="/bday" target="_blank"><img src={bdayhall} width="300" height="220"/></Link>,
     details:''
   },
   image21:{
     
-    hallsone:<img src={partyhall} width="300" height="220"/>,
+    hallsone:<Link to="/Party" target="_blank"><img src={partyhall} width="300" height="220"/></Link>,
     details:''
   },
   image22:{
     
-     hallstwo:<img src={djhall} width="300" height="220"/>,
+     hallstwo:<Link to="/Dj" target="_blank"><img src={djhall} width="300" height="220"/></Link>,
      details2:''
    },
    image23:{
      
-     hallstwo:<img src={annualhall} width="300" height="220"/>,
+     hallstwo:<Link to="/Annual" target="_blank"><img src={annualhall} width="300" height="220"/></Link>,
      details2:''
    },
    image24:{
     
-     hallsthree:<img src={wedhall} width="300" height="220"/>,
+     hallsthree:<Link to="/Wedding" target="_blank"><img src={wedhall} width="300" height="220"/></Link>,
      details3:''
    },
    image25:{
      
-     hallsthree:<img src={phall} width="300" height="220"/>,
+     hallsthree:<Link to="/Partyy" target="_blank"><img src={phall} width="300" height="220"/></Link>,
      details3:''
    },
 };
@@ -182,13 +194,27 @@ const BasicExample = () => (
               <Route path="/Cornthisis" component={Venue4} />
                 <Route path="/Panvandu" component={Venue5} />
                   <Route path="/Siddiqua" component={Venue6} />
+                   <Route path="/bday" component={bdayvenue} />
+                   <Route path="/Dj" component={Djvenue} />
+                     <Route path="/Wedding" component={Wedvenue} />
+                        <Route path="/Party" component={Partyvenue} />
+                             <Route path="/Annual" component={Annualvenue} />
+                               <Route path="/Partyy" component={Partyvenue} />
+                                 <Route path="/photography" component={photography} />
+                                 <Route path="/Bridal" component={Bridal} />
+                                 <Route path="/Mehandi" component={Mehandi} />
+                                  <Route path="/Djj" component={Dj} />
+                                  <Route path="/Catering" component={Catering} />
+                                  <Route path="/Decoration" component={Decoration} />
+                                   <Route path="/Serving" component={Serving} />
+                                             <Route path="/Anchor" component={Anchor} />
     </div>
   </Router>
 );
 const App = () => (
      <div >
       <Menu></Menu>
-      <header className="App-header" ><img src={logo} height="80%"/>
+      <header className="App-header" ><img src={logo} height="100%"/>
       <div align="right" >
      <a href="">Venue</a>
         <a href="">Add Venue</a>
@@ -199,10 +225,10 @@ const App = () => (
         
         <TextHolder>
         <div>
-         <img src={venue} width="100%" height="50%"/>
+         <img src={venue} width="100%" height="380"/>
          <div className="cities">
         <center>
-         <h3>Discoveries in Cities</h3>
+         <h3>Discovery In Cities</h3>
          <Link to="/"><img src={leftarrow} width="30" height="160"/></Link>
          <Link to="/Banglore" target="_blank"><img src={ban} width="160" height="160"/></Link>
         <Link to="/Hyderabad" target="_blank"><img src={hyd} width="160" height="160"/></Link>

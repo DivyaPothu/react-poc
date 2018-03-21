@@ -1,29 +1,28 @@
 import React, { Component } from "react";
-import Banglore from "../images/Bangalore.png"
 import App from "../App"
 import venueone from "../images/venueone.png"
+import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 import "../App.css";
 import logo from "../images/logo.png"
-import { BrowserRouter as Router, Route, Link } from "react-router-dom";
-
 const JSON={
-  image5:{
-     heading:'Juhu club Millenum ',
+ image5:{
+     heading:'Juhu club Millenum - ',
+     address:'Bangalore',
+     category:'Birthday Partyhall',
      venueone:<img src={venueone} width="300" height="220"/>
   },
 };
-const City1 = () => (
+const bdayvenue = () => (
   <div>
-     <header className="App-header"><img src={logo} height="100%"/></header>
-    <h5>Welcome to Bangalore</h5>
-    <h6>Venues in Bangalore</h6>
+         <header className="App-header"><img src={logo} height="100%"/></header>
+    <h5>BirthdayParty Halls</h5>
         {Object.keys(JSON).map(key => (
           <div >
              {JSON[key].venueone} 
-             <p>{JSON[key].heading}</p>
+              <p>{JSON[key].heading}{JSON[key].address}</p>
               </div>
                 ))}
           </div>
 
 );
-export default City1;
+export default bdayvenue;

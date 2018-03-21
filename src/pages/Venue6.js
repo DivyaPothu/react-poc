@@ -3,6 +3,8 @@ import Banglore from "../images/Bangalore.png"
 import App from "../App"
 import partyhall from "../images/partyhall.png"
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
+import "../App.css";
+import logo from "../images/logo.png"
 const JSON={
  image5:{
      heading:'The Siddiqua function hall - ',
@@ -13,7 +15,7 @@ const JSON={
 };
 const Venue6 = () => (
   <div>
-    
+    <header className="App-header"><img src={logo} height="100%"/></header>
     <h5>Welcome to The The Siddiqua function hall</h5>
     <h6>Party halls in The Siddiqua function hall </h6>
         {Object.keys(JSON).map(key => (
