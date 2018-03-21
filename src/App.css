@@ -9,10 +9,13 @@
 
 .App-header {
   background-color: #222;
-  height: 80px;
+  height: 90px;
   padding: 15px;
   color: white;
   margin-top: 6px;
+}
+.App-header img{
+  margin-left: 110px;
 }
 
 .cities{
@@ -76,12 +79,11 @@ position: absolute;
 h2 span { 
    color: white;
    letter-spacing: -1px;  
-   background: rgb(0, 0, 0); /* fallback color */
-   background: rgba(0, 0, 0, 0.4);
+
    padding: 10px; 
    margin-left: 900px;
    margin-top: 200px;
-   font-size: 17px;
+   font-size: 14px;
 }
 h2 span a{
   margin-right:20px;
@@ -89,4 +91,16 @@ h2 span a{
 .contacts
 {
   width:80%;
+}
+h2 span button
+{
+  background-color: #cc0000;
+  color:white;
+  margin-right: 17px;
+  border: black;
+}
+h2 span a
+{
+  color: white;
+  font-weight: normal;
 }

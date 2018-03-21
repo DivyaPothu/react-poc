@@ -215,9 +215,9 @@ const BasicExample = () => (
 const App = () => (
      <div >
       <Menu></Menu>
-      <header className="App-header" ><img src={logo} height="130%" width="15%"/>
+      <header className="App-header" ><img src={logo} height="100%" width="15%"/>
       <div class="menumargin" >
-   <h2><span><a href="">Venue</a><a href="">Vendor</a> <a href="">Add Venue</a> <a href="">Login</a></span></h2>
+   <h2><span><button>VENUE</button><a href="">VENDOR</a> <a href="">ADD VENUE</a> <a href="">LOGIN</a></span></h2>
       </div></header>
     
       <DocumentTitle title="React Ultimate :: About">
@@ -249,7 +249,8 @@ const App = () => (
           <div >
 
              {JSON[key].venueone} 
-             <p>{JSON[key].heading}{JSON[key].address}</p><p>{JSON[key].category}</p>
+             <p>{JSON[key].heading}{JSON[key].address}</p>
+             <p>{JSON[key].category}</p>
               </div>
                 ))}
           </div>
