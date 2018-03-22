@@ -67,6 +67,9 @@ import Decoration from "./pages/Decoration"
 import Serving from "./pages/Serving"
 import Anchor from "./pages/Anchor"
 import book from "./images/book.png"
+import latest1 from "./images/latest1.png"
+import latest2 from "./images/latest2.png"
+import latest3 from "./images/latest3.png"
 const JSON = {
   image1 : {
     type: 'MQ Palace Function Hall',
@@ -376,34 +379,49 @@ const App = () => (
           </div>
         </div>
         </div>
-<div className="foot">
- <div className="row">
-  <div className="col-3 firstsec">
-  <div>
-<h6>Latest Updates</h6>
-</div>
-<div>
-<p>1st sec</p>
-</div>
-<div>
-<p>1st sec</p>
-</div>
-<div>
-<p>1st sec</p>
-</div>
-</div>
-<div className="col-3 secondsec">
-<p>2nd sec</p>
-</div>
-<div className="col-3 thirdsec">
-<p>3rd sec</p>
-</div>
-<div className="col-3 fourthsec">
-<p>4th sec</p>
-</div>
-
-</div>
-</div>
+        <div className="row footcss ">
+        <div className="col-3 footerfirstsection">
+          <center>
+           <h6>Latest update</h6>
+           <table>
+          <tr><td><img src={latest1} height="50%" width="80%"/></td><td>Lorem ipsum is a dummy text full service industrial desigin<br/><a href="">Read more</a></td></tr>
+           <tr><td><img src={latest2} height="40%" width="80%"/></td><td>Integrated Design systems is a full service industrial design<br/><a href="">Read more</a></td></tr>
+           <tr><td><img src={latest3} height="40%" width="80%"/></td><td>When an unknown printer took a gallery of type and specimen book<br/><a href="">Read more</a></td></tr></table>
+           </center>
+        </div>
+        <div className="col-3 secondsection">
+          <center>
+           <h6>Company</h6>
+           
+           <span className="glyphicon glyphicon-menu-right"></span>About us<br/>
+             Privacy Policy<br/>
+             Careers<br/>
+             Blogs<br/>
+             Contact us<br/>
+           
+           </center>
+        </div>
+        <div className="col-3 thirdsection ">
+          
+           <h6>Contact  Us</h6>
+            74th main street ,Oyster <br/>Bay Hyderabad
+           516-482-2181 ext 101
+          
+        </div>
+        <div className="col-3 fourthsection">
+          <center>
+           <h6>Connect with us</h6>
+           <p>We will keep you informed and updated<br/>
+           Singup for the our email newsletters</p>
+         
+           <form>
+             <input type="textbox" value="Firstname"/>
+             <input type="textbox" value="Lastname"/><br/><br/>
+             <input type="textbox" value="Email"/><input  type="button" value="submit"/>
+             </form>
+           </center>
+        </div>
+      </div>
 
        </div>
 </TextHolder>

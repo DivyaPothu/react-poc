@@ -145,3 +145,28 @@ h2 span a:hover
   margin-top: 93px;
   padding-left: 245px;
 }
+.footcss{
+  background-color: #0C1123;
+  height: 220px;
+  color: white;
+  padding: 20px;
+  font-size:10px;
+  padding-top: 12px;
+
+ }
+ .footerfirstsection{
+margin-left:60px;
+ }
+ .secondsection
+ {
+   margin-left:-50px;
+ }
+ .thirdsection{
+  margin-left:-10px;
+ }
+ .fourthsection{
+   margin-left: -80px;
+ }
+ .fourthsection input{
+   margin-right:4px;
+ }
