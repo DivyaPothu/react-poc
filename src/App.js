@@ -217,7 +217,7 @@ const App = () => (
       <Menu></Menu>
       <header className="App-header" ><img src={logo} height="100%" width="15%"/>
       <div class="menumargin" >
-   <h2><span><button>VENUE</button><a href="">VENDOR</a> <a href="">ADD VENUE</a> <a href="">LOGIN</a></span></h2>
+   <h2><span><button>VENUE</button><a>VENDOR</a> <a>ADD VENUE</a> <a>LOGIN</a></span></h2>
       </div></header>
     
       <DocumentTitle title="React Ultimate :: About">

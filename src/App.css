@@ -104,3 +104,8 @@ h2 span a
   color: white;
   font-weight: normal;
 }
+
+h2 span a:hover
+{
+  color: white;
+}
