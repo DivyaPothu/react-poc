@@ -66,6 +66,7 @@ import Catering from "./pages/Catering"
 import Decoration from "./pages/Decoration"
 import Serving from "./pages/Serving"
 import Anchor from "./pages/Anchor"
+import book from "./images/book.png"
 const JSON = {
   image1 : {
     type: 'MQ Palace Function Hall',
@@ -215,16 +216,25 @@ const BasicExample = () => (
 const App = () => (
      <div >
       <Menu></Menu>
-      <header className="App-header" ><img src={logo} height="100%" width="15%"/>
+      <div className="firstimg">
+      
+      <header className="App-header" ></header>
       <div class="menumargin" >
-   <h2><span><button>VENUE</button><a>VENDOR</a> <a>ADD VENUE</a> <a>LOGIN</a></span></h2>
-      </div></header>
+      <h2><span><img src={logo}  height="100%" width="15%"/></span></h2>
+      <div className="menuclass">
+      <h2><span><button>VENUE</button><a>VENDOR</a> <a>ADD VENUE</a> <a>LOGIN</a></span></h2>
+      </div>
+      </div> 
+    <div className="book">
+    <img src={book} height="100%" width="70%"/>
+    </div>
+      </div>
     
       <DocumentTitle title="React Ultimate :: About">
         
         <TextHolder>
         <div>
-         <img src={venue} width="100%" height="380"/>
+        
          <div className="cities">
         <center>
          <h3>Discover In Cities</h3>
@@ -366,15 +376,35 @@ const App = () => (
           </div>
         </div>
         </div>
-<div className="contacts">
+<div className="foot">
  <div className="row">
-{Object.keys(JSON).map(key => (
-          <div >
-             {JSON[key].venuetwelve} 
-              </div>
-                ))}
+  <div className="col-3 firstsec">
+  <div>
+<h6>Latest Updates</h6>
+</div>
+<div>
+<p>1st sec</p>
+</div>
+<div>
+<p>1st sec</p>
+</div>
+<div>
+<p>1st sec</p>
 </div>
 </div>
+<div className="col-3 secondsec">
+<p>2nd sec</p>
+</div>
+<div className="col-3 thirdsec">
+<p>3rd sec</p>
+</div>
+<div className="col-3 fourthsec">
+<p>4th sec</p>
+</div>
+
+</div>
+</div>
+
        </div>
 </TextHolder>
  </DocumentTitle>
