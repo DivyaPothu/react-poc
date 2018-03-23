@@ -38,6 +38,8 @@ import annualhall from "./images/annualdinners.png"
 import partyhall from "./images/partyhall.png"
 import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
 import conferencerooms from "./images/conferencerooms.png"
+import 'font-awesome/css/font-awesome.min.css';
+import '../node_modules/font-awesome/css/font-awesome.min.css';
 //import Theme from "./less/theme.less"
 import "./App.css";
 import City1 from "./pages/City1"
@@ -70,6 +72,7 @@ import book from "./images/book.png"
 import latest1 from "./images/latest1.png"
 import latest2 from "./images/latest2.png"
 import latest3 from "./images/latest3.png"
+
 const JSON = {
   image1 : {
     type: 'MQ Palace Function Hall',
@@ -227,12 +230,22 @@ const App = () => (
       <div className="menuclass">
       <h2><span><button>VENUE</button><a>VENDOR</a> <a>ADD VENUE</a> <a>LOGIN</a></span></h2>
       </div>
-      </div> 
-    <div className="book">
-    <img src={book} height="100%" width="70%"/>
-    </div>
-      </div>
-    
+      </div > 
+      <div className="row">
+          <div className="col-3">
+          </div>
+          <div className="col-6 book">
+            <h3 className="venue">Book Your Perfect Venue</h3>
+              <div className="row cityField">
+              <input type="text" style={{ width:140 }} placeholder="   City Name" /><span><i className="fa fa-angle-down" style={{fontSize:22}} ></i></span>
+              <input type="text" style={{ width:230 }} placeholder="   Type of Event(e.g.Wedding)" /><span><i className="fa fa-angle-down" style={{fontSize:22}}></i></span>
+              <input type="text" style={{ width:140 }} placeholder="   No.of People" />
+              <input type="text" className = "searchField" style={{ width:96,backgroundColor:"#FC6220", border: 0 }} placeholder="   Search" /><span className="searchIcon"><i className="fa fa-search"></i></span>
+              </div>
+              </div>
+              </div>
+   </div>
+   
       <DocumentTitle title="React Ultimate :: About">
         
         <TextHolder>
@@ -390,23 +403,25 @@ const App = () => (
            </center>
         </div>
         <div className="col-3 secondsection">
-          <center>
+        
            <h6>Company</h6>
            
-           <span className="glyphicon glyphicon-menu-right"></span>About us<br/>
-             Privacy Policy<br/>
-             Careers<br/>
-             Blogs<br/>
-             Contact us<br/>
-           
-           </center>
+           <p>
+                 <span><i className="fa fa-angle-right"></i></span><span><i className="fa fa-angle-right"></i></span> About us<br/>
+                 <span><i className="fa fa-angle-right"></i></span><span><i className="fa fa-angle-right"></i></span> Privacy Policy<br/>
+                 <span><i className="fa fa-angle-right"></i></span><span><i className="fa fa-angle-right"></i></span> Careers<br/>
+                 <span><i className="fa fa-angle-right"></i></span><span><i className="fa fa-angle-right"></i></span> Blogs<br/>
+                 <span><i className="fa fa-angle-right"></i></span><span><i className="fa fa-angle-right"></i></span> Contact us</p>
+                 <br/>
+
         </div>
         <div className="col-3 thirdsection ">
-          
+        <center>
            <h6>Contact  Us</h6>
-            74th main street ,Oyster <br/>Bay Hyderabad
-           516-482-2181 ext 101
-          
+           <p><span><i className="fa fa-map-marker"></i></span>74th main street ,Oyster <br/>Bay Hyderabad<br/>
+           <span><i className="fa fa-phone"></i></span>516-482-2181 ext 101<br/>
+           <span><i className="fa fa-envelope"></i></span> info@venefy.com</p>
+          </center>
         </div>
         <div className="col-3 fourthsection">
           <center>

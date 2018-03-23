@@ -47,7 +47,7 @@
 }
 .popularspace{
     background-color: white;
-      height: 6px;
+    height: 14px;
 }
 
 .App-intro {
@@ -60,7 +60,7 @@
   }
 .hallclass{
   background-color: white;
-  height: 600px;
+  height: 540px;
   }
 @keyframes App-logo-spin {
   from { transform: rotate(0deg); }
@@ -126,7 +126,21 @@ h2 span a:hover
 {
   background-image: url("./images/venue6.jpg");
   height: 470px;
+  background-size:     cover;                      
+ background-repeat:   no-repeat;
+ background-position: center center;  
+  
 }
+.backimg{
+
+  background-image: url("./images/venue6.jpg");
+  background-size:     cover;                      
+  background-repeat:   no-repeat;
+  background-position: center center;  
+  height: 600px;
+  
+ 
+ }
 .logclass{
     
  
@@ -140,11 +154,7 @@ h2 span a:hover
   margin-left: 750px;
   
 }
-.book
-{
-  margin-top: 93px;
-  padding-left: 245px;
-}
+
 .footcss{
   background-color: #0C1123;
   height: 220px;
@@ -152,21 +162,75 @@ h2 span a:hover
   padding: 20px;
   font-size:10px;
   padding-top: 12px;
+  width: 1290px;
 
  }
+ 
  .footerfirstsection{
 margin-left:60px;
  }
  .secondsection
  {
-   margin-left:-50px;
+      margin-left: 45px;
  }
  .thirdsection{
-  margin-left:-10px;
+  margin-left: -193px;
  }
  .fourthsection{
-   margin-left: -80px;
+  margin-left: -43px;
  }
  .fourthsection input{
    margin-right:4px;
  }
+ .book
+{
+  margin-top: 138px;
+  height: 171px;
+  background-color: #222;
+  background: rgba(0, 0, 0, 0.6);
+}
+.venue {
+  color: white;
+  text-align: center;
+  padding: 14px;
+}
+.cityField {
+  padding: 20px;
+  height:90px;
+  border: 1 rgba(0, 0, 0, 0.6);
+}
+input {
+  background-color : white;
+  border: 0.5 rgba(0, 0, 0, 0.6);
+}
+::placeholder { 
+  color: black;
+}
+
+.form-control {
+  padding-right: 30px;
+}
+
+.form-control + .glyphicon {
+  position: absolute;
+  right: 0;
+  padding: 8px 27px;
+}
+.searchIcon {
+  margin-left: -25px;
+  margin-top: 11px;
+  font-size: 1.37em;
+  color: white;
+}
+.fa-search {
+  font-size: 1.35em;
+}
+.fa-angle-down {
+  margin-left: -24px;
+  margin-top: 16px;
+  font-size: 1.3em;
+  color: #5CACE3;
+}
+.searchField::placeholder { 
+  color: white;
+}
