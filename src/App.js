@@ -91,41 +91,121 @@ image4: {
   portfolioImage: <img src={mumbai} width="160" height="160"/>
   },
   image5:{
-     heading:'Juhu club Millenum - ',
-     address:'Banglore',
-     category:'Category-Birthday Partyhall',
-     venueone:<Link to="/Juhu" target="_blank"><img src={venueone} width="300" height="220"/></Link>
-  },
-  image6:{
-    heading:'MQ palace function hall - ',
-    address:'Hyderabad',
-     category:'Category-DJ Hall',
-    venueone:<Link to="/MQ" target="_blank"><img src={venuetwo} width="300" height="220"/></Link>
-  },
-  image7:{
-    headingtwo:'Pai comforts-femen - ',
-    addresstwo:'Pune',
-    categorytwo:'Category-Wedding Hall',
-    venuetwo:<Link to="/Pai" target="_blank"><img src={venuethree} width="300" height="220"/></Link>
-  },
-  image8:{
-    headingtwo:'The  Cornthisis right club - ',
-    addresstwo:'Chenaai',
-    categorytwo:'Category-Party Hall',
-    venuetwo:<Link to="/Cornthisis" target="_blank"><img src={venuefour} width="300" height="220"/></Link>
-  },
-  image9:{
-    headingthree:'Panvandu JP Hotel - ',
-    addressthree:'Delhi',
-    categorythree:'Category-Annual dinner',
-    venuethree:<Link to="/Panvandu" target="_blank"><img src={venuefive} width="300" height="220"/></Link>
-  },
-  image10:{
-    headingthree:'The Siddiqua function hall - ',
-    addressthree:'Mumbai',
-    categorythree:'Category-Party Hall',
-    venuethree:<Link to="/Siddiqua" target="_blank"><img src={venuesix} width="300" height="220"/></Link>
-  },
+    heading:<div ><h6 className="highlightsclass">Juhu club Millenum</h6></div>,
+    address:'Banglore',
+   
+    Highlights:<div  >
+            
+                      <h7 className="highlightsclass">HIGHLIGHTS</h7><br/>
+                     <div className="row" >
+                       <div className="col-4">
+                    <span><i className="fa fa-square"></i></span> Veg & Non veg  <br/>      
+                    <span><i className="fa fa-archive"> </i></span> Air Conditioning
+                    </div>
+                    <div className="col-4">
+                   
+                    <span><i className="fa fa-wheelchair"> </i></span>200-750 seating<br/>
+                    <span><i className="fa fa-car"> </i></span> Car Parking
+                    </div>
+                    </div>
+                    </div>,
+    venueone:<Link to="/Juhu" target="_blank"><img src={venueone} width="300" height="220"/></Link>
+ },
+ image6:{
+   heading:<h6 className="highlightsclass">MQ palace function hall </h6>,
+   address:'Hyderabad',
+   Highlights:<div  >
+   <h7 className="highlightsclass">HIGHLIGHTS</h7><br/>
+  <div className="row" >
+    <div className="col-4">
+ <span><i className="fa fa-square"></i></span> Veg & Non veg  <br/>      
+ <span><i className="fa fa-archive"> </i></span> Air Conditioning
+ </div>
+ <div className="col-4">
+
+ <span><i className="fa fa-wheelchair"> </i></span>200-750 seating<br/>
+ <span><i className="fa fa-car"> </i></span> Car Parking
+ </div>
+ </div>
+ </div>,
+   venueone:<Link to="/MQ" target="_blank"><img src={venuetwo} width="300" height="220"/></Link>
+ },
+ image7:{
+   headingtwo:<h6 className="highlightsclass">Pai comforts-femen </h6>,
+   addresstwo:'Pune',
+   Highlights2:<div  >
+   <h7 className="highlightsclass">HIGHLIGHTS</h7><br/>
+  <div className="row" >
+    <div className="col-4">
+ <span><i className="fa fa-square"></i></span> Veg & Non veg  <br/>      
+ <span><i className="fa fa-archive"> </i></span> Air Conditioning
+ </div>
+ <div className="col-4">
+
+ <span><i className="fa fa-wheelchair"> </i></span>200-750 seating<br/>
+ <span><i className="fa fa-car"> </i></span> Car Parking
+ </div>
+ </div>
+ </div>,
+   venuetwo:<Link to="/Pai" target="_blank"><img src={venuethree} width="300" height="220"/></Link>
+ },
+ image8:{
+   headingtwo:<h6 className="highlightsclass">The  Cornthisis right club</h6>,
+   addresstwo:'Chenaai',
+   Highlights2:<div  >
+   <h7 className="highlightsclass">HIGHLIGHTS</h7><br/>
+  <div className="row" >
+    <div className="col-4">
+ <span><i className="fa fa-square"></i></span> Veg & Non veg  <br/>      
+ <span><i className="fa fa-archive"> </i></span> Air Conditioning
+ </div>
+ <div className="col-4">
+
+ <span><i className="fa fa-wheelchair"> </i></span>200-750 seating<br/>
+ <span><i className="fa fa-car"> </i></span> Car Parking
+ </div>
+ </div>
+ </div>,
+   venuetwo:<Link to="/Cornthisis" target="_blank"><img src={venuefour} width="300" height="220"/></Link>
+ },
+ image9:{
+   headingthree:<h6 className="highlightsclass">Panvandu JP Hotel</h6>,
+   addressthree:'Delhi',
+   Highlights3:<div  >
+   <h7 className="highlightsclass">HIGHLIGHTS</h7><br/>
+  <div className="row" >
+    <div className="col-4">
+ <span><i className="fa fa-square"></i></span> Veg & Non veg  <br/>      
+ <span><i className="fa fa-archive"> </i></span> Air Conditioning
+ </div>
+ <div className="col-4">
+
+ <span><i className="fa fa-wheelchair"> </i></span>200-750 seating<br/>
+ <span><i className="fa fa-car"> </i></span> Car Parking
+ </div>
+ </div>
+ </div>,
+   venuethree:<Link to="/Panvandu" target="_blank"><img src={venuefive} width="300" height="220"/></Link>
+ },
+ image10:{
+   headingthree:<h6 className="highlightsclass">The Siddiqua function hall</h6>,
+   addressthree:'Mumbai',
+   Highlights3:<div  >
+   <h7 className="highlightsclass">HIGHLIGHTS</h7><br/>
+  <div className="row" >
+    <div className="col-4">
+ <span><i className="fa fa-square"></i></span> Veg & Non veg  <br/>      
+ <span><i className="fa fa-archive"> </i></span> Air Conditioning
+ </div>
+ <div className="col-4">
+
+ <span><i className="fa fa-wheelchair"> </i></span>200-750 seating<br/>
+ <span><i className="fa fa-car"> </i></span> Car Parking
+ </div>
+ </div>
+ </div>,
+   venuethree:<Link to="/Siddiqua" target="_blank"><img src={venuesix} width="300" height="220"/></Link>
+ },
 image11:{
     venuefour:<Link to="/photography" target="_blank"><img src={photo} width="250" height="170"/></Link>
   },
@@ -228,7 +308,7 @@ const App = () => (
       <div class="menumargin" >
       <h2><span><img src={logo}  height="100%" width="15%"/></span></h2>
       <div className="menuclass">
-      <h2><span><button>VENUE</button><a>VENDOR</a> <a>ADD VENUE</a> <a>LOGIN</a></span></h2>
+      <h2><span><button>VENUE</button><a>VENDOR  <i className="fa fa-caret-down"></i></a><a>ADD VENUE</a> <a>LOGIN</a></span></h2>
       </div>
       </div > 
       <div className="row">
@@ -254,8 +334,10 @@ const App = () => (
         
          <div className="cities">
         <center>
-         <h3>Discover In Cities</h3>
-         <center><p class="outset"></p></center>
+        
+         <center><h3>Discover <span style={{color:"#008CEA"}}> In Cities</span></h3></center>
+       
+         <hr></hr>
          <Link to="/"><img src={leftarrow} width="30" height="160"/></Link>
          <Link to="/Banglore" target="_blank"><img src={ban} width="160" height="160"/></Link>
         <Link to="/Hyderabad" target="_blank"><img src={hyd} width="160" height="160"/></Link>
@@ -266,26 +348,40 @@ const App = () => (
         <Link to="/"><img src={rightarrow} width="30" height="160"/></Link>
         </center>
         </div>
-         <center><h3>Venues</h3></center>
-                 <center><p class="outset"></p></center>
-        <div className="venueclass">
+         <center><h3 style={{color:"#008CEA"}}>Venues</h3>
+             <hr></hr></center>
+             <div className="venueclass">
         <div className="row">
           
           <div className="col-4" >
         {Object.keys(JSON).map(key => (
-          <div >
+          <div>
 
              {JSON[key].venueone} 
-             <p>{JSON[key].heading}{JSON[key].address}</p>
+             
+             <div >
+             
+             <p>{JSON[key].heading}</p>
              <p>{JSON[key].category}</p>
+             </div>
+             <div>
+               {JSON[key].Highlights}  
+             </div>
+             
               </div>
+             
                 ))}
           </div>
           <div className="col-4">
         {Object.keys(JSON).map(key => (
           <div >
              {JSON[key].venuetwo} 
-             <p>{JSON[key].headingtwo}{JSON[key].addresstwo}</p><p>{JSON[key].categorytwo}</p>
+   
+             <p>{JSON[key].headingtwo}</p><p>{JSON[key].categorytwo}</p>
+             <div>
+               {JSON[key].Highlights2}  
+             </div>
+            
               </div>
                 ))}
           </div>
@@ -293,14 +389,19 @@ const App = () => (
         {Object.keys(JSON).map(key => (
          <div >
              {JSON[key].venuethree} 
-             <p>{JSON[key].headingthree}{JSON[key].addressthree}</p><p>{JSON[key].categorythree}</p>
+    
+             <p>{JSON[key].headingthree}</p><p>{JSON[key].categorythree}</p>
+             <div>
+               {JSON[key].Highlights3}  
+             </div>
               </div>
                 ))}
           </div>
           </div>
           </div>
+          <div className="hallspace"></div>
  <div className="hallclass">
-     <div className="row">
+     <div className="row"><center>
        <div className="col-4">
          {Object.keys(JSON).map(key=>(
            <div align="center">
@@ -308,7 +409,8 @@ const App = () => (
               <p>{JSON[key].details}</p>
               </div>
          ))}
-           </div>
+           </div></center>
+           <center>
        <div className="col-4">
        {Object.keys(JSON).map(key=>(
            <div align="center">
@@ -316,7 +418,8 @@ const App = () => (
               <p>{JSON[key].details2}</p>
               </div>
          ))}
-       </div>
+       </div></center>
+       <center>
        <div className="col-4">
        {Object.keys(JSON).map(key=>(
            <div align="center">
@@ -324,11 +427,11 @@ const App = () => (
               <p>{JSON[key].details3}</p>
               </div>
          ))}
-       </div>
+       </div></center>
      </div>
      </div>
-          <center><h3>Popular Services</h3></center>
-             <center><p class="outset"></p></center>
+          <center><h3 style={{color:"#008CEA"}}>Popular Services</h3>
+            <hr></hr></center>
           <div className="popularspace">
         <div className="row">
         </div>
@@ -433,12 +536,15 @@ const App = () => (
            <form>
              <input type="textbox" value="Firstname"/>
              <input type="textbox" value="Lastname"/><br/><br/>
-             <input type="textbox" value="Email"/><input  type="button" value="submit"/>
+             <input type="textbox" value="Email"/><input  type="button" value="submit" style={{ width:60,backgroundColor:"#EC5C30", border: 0 }}/>
              </form>
            </center>
         </div>
+ 
       </div>
-
+<div className="copy">
+<center><h6>Copy Right 2018 - venewfy | All Rights Reserved</h6></center>
+  </div>
        </div>
 </TextHolder>
  </DocumentTitle>
