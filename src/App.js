@@ -232,17 +232,18 @@ const App = () => (
       </div>
       </div > 
       <div className="row">
-          <div className="col-3">
+      <div className="col-3">
           </div>
           <div className="col-6 book">
             <h3 className="venue">Book Your Perfect Venue</h3>
               <div className="row cityField">
-              <input type="text" style={{ width:140 }} placeholder="   City Name" /><span><i className="fa fa-angle-down" style={{fontSize:22}} ></i></span>
-              <input type="text" style={{ width:230 }} placeholder="   Type of Event(e.g.Wedding)" /><span><i className="fa fa-angle-down" style={{fontSize:22}}></i></span>
-              <input type="text" style={{ width:140 }} placeholder="   No.of People" />
+              <input type="text" style={{ width:120 }} placeholder="   City Name" /><span><i className="fa fa-angle-down" style={{fontSize:22}} ></i></span>
+              <input type="text" style={{ width:250 }} placeholder="   Type of Event(e.g.Wedding)" /><span><i className="fa fa-angle-down" style={{fontSize:22}}></i></span>
+              <input type="text" style={{ width:120 }} placeholder="   No.of People" />
               <input type="text" className = "searchField" style={{ width:96,backgroundColor:"#FC6220", border: 0 }} placeholder="   Search" /><span className="searchIcon"><i className="fa fa-search"></i></span>
               </div>
               </div>
+              
               </div>
    </div>
    

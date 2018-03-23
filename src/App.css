@@ -162,7 +162,7 @@ h2 span a:hover
   padding: 20px;
   font-size:10px;
   padding-top: 12px;
-  width: 1290px;
+
 
  }
  
@@ -195,7 +195,7 @@ margin-left:60px;
   padding: 14px;
 }
 .cityField {
-  padding: 20px;
+  padding: 0px 3px 46px 38px;
   height:90px;
   border: 1 rgba(0, 0, 0, 0.6);
 }
